@@ -1,0 +1,1219 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shailynnxie/ontologies/2023/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/shailynnxie/ontologies/2023/2/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/shailynnxie/ontologies/2023/2/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Beaucoup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoûtCher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoûtDeLaVie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoûtMoinsCher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DensitéBas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DensitéHaut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DensitéMoyenne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDP_Bas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDP_Haut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HôpitalConnu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Niveau1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Niveau2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Niveau3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NiveauDeVille"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peuplement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrixBas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrixElevé"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrixMoyen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UniversitéConnue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ville"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProbablyBe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#existsTransportation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCityLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDensité"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEducation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGDP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHospital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHousePrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLifeCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransportation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shouldBe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#willBe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wouldBe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wouldHasUniversity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoûtDuMois"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDensité"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHospital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUniversity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aéroport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bateau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beijing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chengdu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coût5000-"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Densité_Bas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Densité_Haut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Densité_Moyen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GDPBas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GDPHaut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guangzhou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kunming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Métro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nombre0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nombre2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nombre4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nombre8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prix30000-"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sanya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shanghai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tramway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coût10000+"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prix50000+"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DensitéBas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasHousePrice"/>
+            <Class IRI="#PrixBas"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DensitéHaut"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasHousePrice"/>
+            <Class IRI="#PrixElevé"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DensitéMoyenne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasHousePrice"/>
+            <Class IRI="#PrixMoyen"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Niveau1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLifeCost"/>
+            <Class IRI="#CoûtCher"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Niveau2"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasHousePrice"/>
+                <Class IRI="#PrixMoyen"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasLifeCost"/>
+                <Class IRI="#CoûtMoinsCher"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Niveau3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasHousePrice"/>
+            <Class IRI="#PrixBas"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Beaucoup"/>
+        <Class IRI="#HôpitalConnu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoûtCher"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoûtMoinsCher"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DensitéBas"/>
+        <Class IRI="#Peuplement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DensitéHaut"/>
+        <Class IRI="#Peuplement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DensitéMoyenne"/>
+        <Class IRI="#Peuplement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDP_Bas"/>
+        <Class IRI="#GDP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDP_Haut"/>
+        <Class IRI="#GDP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Niveau1"/>
+        <Class IRI="#NiveauDeVille"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Niveau2"/>
+        <Class IRI="#NiveauDeVille"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Niveau3"/>
+        <Class IRI="#NiveauDeVille"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peu"/>
+        <Class IRI="#HôpitalConnu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrixBas"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrixElevé"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrixMoyen"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Beaucoup"/>
+        <Class IRI="#Peu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoûtCher"/>
+        <Class IRI="#CoûtMoinsCher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DensitéBas"/>
+        <Class IRI="#DensitéHaut"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DensitéBas"/>
+        <Class IRI="#DensitéMoyenne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DensitéHaut"/>
+        <Class IRI="#DensitéMoyenne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GDP_Bas"/>
+        <Class IRI="#GDP_Haut"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Niveau1"/>
+        <Class IRI="#Niveau2"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Niveau1"/>
+        <Class IRI="#Niveau3"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Niveau2"/>
+        <Class IRI="#Niveau3"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrixBas"/>
+        <Class IRI="#PrixElevé"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrixBas"/>
+        <Class IRI="#PrixMoyen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrixElevé"/>
+        <Class IRI="#PrixMoyen"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Bateau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beaucoup"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Beijing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Chengdu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoûtMoinsCher"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DensitéBas"/>
+        <NamedIndividual IRI="#Densité_Bas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DensitéHaut"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DensitéMoyenne"/>
+        <NamedIndividual IRI="#Densité_Moyen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GDP_Bas"/>
+        <NamedIndividual IRI="#GDPBas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GDP_Haut"/>
+        <NamedIndividual IRI="#GDPHaut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Kunming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Niveau1"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Niveau2"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Niveau3"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UniversitéConnue"/>
+        <NamedIndividual IRI="#Nombre0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UniversitéConnue"/>
+        <NamedIndividual IRI="#Nombre2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UniversitéConnue"/>
+        <NamedIndividual IRI="#Nombre4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UniversitéConnue"/>
+        <NamedIndividual IRI="#Nombre8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Peu"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrixBas"/>
+        <NamedIndividual IRI="#Prix30000-"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrixMoyen"/>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Sanya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ville"/>
+        <NamedIndividual IRI="#Shanghai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoûtCher"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrixElevé"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Nombre8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGDP"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#GDPHaut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Densité_Moyen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Nombre2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Chengdu"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldBe"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldBe"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Densité_Bas"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Densité_Moyen"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Nombre2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGDP"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#GDPHaut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Bateau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Guangzhou"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Densité_Bas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Nombre0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGDP"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#GDPBas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Prix30000-"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Bateau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Kunming"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Prix30000-"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+        <NamedIndividual IRI="#Niveau2Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Niveau3Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Densité_Bas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Nombre0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGDP"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#GDPBas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Bateau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Sanya"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducation"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Nombre4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGDP"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#GDPHaut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Aéroport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Métro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wouldBe"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shouldBe"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+        <NamedIndividual IRI="#Niveau1Ville"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#BeaucoupHôpitalConnu"/>
+        <Literal>Il existe au moins dix hôpitaux célèbres.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCoûtDuMois"/>
+        <NamedIndividual IRI="#Coût5000-"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Coût du mois moins de 5000 yuan.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Densité_Bas"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Moins de 1,000 persons par km2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Densité_Haut"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Plus de 3,000 persons par km2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDensité"/>
+        <NamedIndividual IRI="#Densité_Moyen"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">environ 2,000 persons par km2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUniversity"/>
+        <NamedIndividual IRI="#Nombre0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUniversity"/>
+        <NamedIndividual IRI="#Nombre2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUniversity"/>
+        <NamedIndividual IRI="#Nombre4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasUniversity"/>
+        <NamedIndividual IRI="#Nombre8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHospital"/>
+        <NamedIndividual IRI="#PeuHôpitalConnu"/>
+        <Literal>Il existe moins de dix hôpitaux célèbres.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Prix30000-"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Prix30000-50000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCoûtDuMois"/>
+        <NamedIndividual IRI="#Coût10000+"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Coût du mois plus de 10000 yuan.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Prix50000+"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">63000</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProbablyBe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#existsTransportation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDensité"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEducation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGDP"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHospital"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#shouldBe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#willBe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wouldBe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wouldHasUniversity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#existsTransportation"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProbablyBe"/>
+        <Class IRI="#Peuplement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#existsTransportation"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDensité"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEducation"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGDP"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHospital"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <Class IRI="#Ville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shouldBe"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#willBe"/>
+        <Class IRI="#GDP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wouldBe"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wouldHasUniversity"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProbablyBe"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#existsTransportation"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCityLevel"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDensité"/>
+        <Class IRI="#Peuplement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEducation"/>
+        <Class IRI="#UniversitéConnue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGDP"/>
+        <Class IRI="#GDP"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHospital"/>
+        <Class IRI="#HôpitalConnu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHospital"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasHospital"/>
+            <Class IRI="#HôpitalConnu"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHousePrice"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasHousePrice"/>
+            <Class IRI="#PrixMoyenAuM2"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeCost"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasLifeCost"/>
+            <Class IRI="#CoûtDeLaVie"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransportation"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shouldBe"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#willBe"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wouldBe"/>
+        <Class IRI="#NiveauDeVille"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wouldHasHospital"/>
+        <Class IRI="#HôpitalConnu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wouldHasUniversity"/>
+        <Class IRI="#UniversitéConnue"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoûtDuMois"/>
+        <Class IRI="#CoûtDeLaVie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDensité"/>
+        <Class IRI="#Peuplement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHospital"/>
+        <Class IRI="#HôpitalConnu"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#PrixMoyenAuM2"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasUniversity"/>
+        <Class IRI="#UniversitéConnue"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasUniversity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
