@@ -1,0 +1,10 @@
+PREFIX cartoons: <http://www.sorbonne-universite.fr/cartoons/ontology#>
+
+SELECT ?character ?name 
+WHERE { 
+	?character cartoons:hasGender cartoons:Female  .
+	?character cartoons:name ?name .
+ 	FILTER (regex(?name, "a"))
+	
+}
+

@@ -1,0 +1,10 @@
+
+PREFIX cartoons: <http://www.sorbonne-universite.fr/cartoons/ontology#>
+
+SELECT ?character ?instrument 
+WHERE {
+	?character rdf:type cartoons:CartoonCharacter .
+	?character cartoons:plays ?instrument .
+
+
+}

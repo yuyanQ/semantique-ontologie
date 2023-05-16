@@ -1,0 +1,9 @@
+PREFIX cartoons: <http://www.sorbonne-universite.fr/cartoons/ontology#>
+
+ASK {
+	?scht cartoons:name "Schtroumpfette" .
+	?scht cartoons:hasYearOfBirth ?year_scht .
+	?g cartoons:name "Gargamel" .
+	?g cartoons:hasYearOfBirth ?year_g .
+	FILTER (?year_scht< ?year_g)
+}

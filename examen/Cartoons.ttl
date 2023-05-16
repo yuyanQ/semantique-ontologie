@@ -1,0 +1,295 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cartoons: <http://www.sorbonne-universite.fr/cartoons/ontology#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasAnnéePremièrePublication
+<http://www.co-ode.org/ontologies/ont.owl#HasAnnéePremièrePublication> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasAuteur
+<http://www.co-ode.org/ontologies/ont.owl#HasAuteur> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasEditeur
+<http://www.co-ode.org/ontologies/ont.owl#HasEditeur> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasPays
+<http://www.co-ode.org/ontologies/ont.owl#HasPays> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasPersonnagesPrincipaux
+<http://www.co-ode.org/ontologies/ont.owl#HasPersonnagesPrincipaux> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#HasQuantitéAlbums
+<http://www.co-ode.org/ontologies/ont.owl#HasQuantitéAlbums> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#hasGender
+cartoons:hasGender rdf:type owl:ObjectProperty ;
+                   rdfs:domain cartoons:CartoonCharacter ;
+                   rdfs:range cartoons:Gender ;
+                   rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                   rdfs:label "hasGender" .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#plays
+cartoons:plays rdf:type owl:ObjectProperty ;
+               rdfs:domain cartoons:CartoonCharacter ;
+               rdfs:range cartoons:Instrument ;
+               rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+               rdfs:label "plays" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#hasYearOfBirth
+cartoons:hasYearOfBirth rdf:type owl:DatatypeProperty ;
+                        rdfs:domain cartoons:CartoonCharacter ;
+                        rdfs:range xsd:integer ;
+                        rdfs:comment "year of first apparence" ;
+                        rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                        rdfs:label "hasYearOfBirth"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#name
+cartoons:name rdf:type owl:DatatypeProperty ;
+              rdfs:domain cartoons:CartoonCharacter ;
+              rdfs:range xsd:string ;
+              rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+              rdfs:label "name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#Auteurs
+<http://www.co-ode.org/ontologies/ont.owl#Auteurs> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée
+<http://www.co-ode.org/ontologies/ont.owl#Bande_dessinée> rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#PersonnagesPrincipaux
+<http://www.co-ode.org/ontologies/ont.owl#PersonnagesPrincipaux> rdf:type owl:Class .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Aerophone
+cartoons:Aerophone rdf:type owl:Class ;
+                   rdfs:subClassOf cartoons:Instrument ;
+                   rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                   rdfs:label "Aerophone" .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#CartoonCharacter
+cartoons:CartoonCharacter rdf:type owl:Class ;
+                          rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                          rdfs:label "Cartoon character"@en ,
+                                     "Personnage de fiction"@fr .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Cordophone
+cartoons:Cordophone rdf:type owl:Class ;
+                    rdfs:subClassOf cartoons:Instrument ;
+                    rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                    rdfs:label "Cordophone" .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Gender
+cartoons:Gender rdf:type owl:Class ;
+                rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                rdfs:label "Gender" .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Instrument
+cartoons:Instrument rdf:type owl:Class ;
+                    rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                    rdfs:label "Instrument de musique"@fr ,
+                               "Instrumento musical"@es ,
+                               "Musical instrument"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Membranophone
+cartoons:Membranophone rdf:type owl:Class ;
+                       rdfs:subClassOf cartoons:Instrument ;
+                       rdfs:isDefinedBy <http://www.sorbonne-universite.fr/web_semantique/cartoons/ontology#> ;
+                       rdfs:label "Membranophone" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Assurancetourix
+cartoons:Assurancetourix rdf:type owl:NamedIndividual ,
+                                  cartoons:CartoonCharacter ;
+                         cartoons:hasGender cartoons:Male ;
+                         cartoons:plays cartoons:Lyre ;
+                         cartoons:hasYearOfBirth 1961 ;
+                         cartoons:name "Assurancetourix"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Banjo
+cartoons:Banjo rdf:type owl:NamedIndividual ,
+                        cartoons:Cordophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#BugsBunny
+cartoons:BugsBunny rdf:type owl:NamedIndividual ,
+                            cartoons:CartoonCharacter ;
+                   cartoons:hasGender cartoons:Male ;
+                   cartoons:plays cartoons:Banjo ;
+                   cartoons:hasYearOfBirth 1938 ;
+                   cartoons:name "Bugs Bunny"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#CigarBox
+cartoons:CigarBox rdf:type owl:NamedIndividual ,
+                           cartoons:Cordophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Dingo
+cartoons:Dingo rdf:type owl:NamedIndividual ,
+                        cartoons:CartoonCharacter ;
+               cartoons:hasGender cartoons:Male ;
+               cartoons:plays cartoons:Guitar ,
+                              cartoons:Tambour ;
+               cartoons:hasYearOfBirth 1932 ;
+               cartoons:name "Dingo"@fr ,
+                             "Goofy Goof"@en ,
+                             "Tribilín"@es .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Donald
+cartoons:Donald rdf:type owl:NamedIndividual ,
+                         cartoons:CartoonCharacter ;
+                cartoons:hasGender cartoons:Male ;
+                cartoons:plays cartoons:Guitar ,
+                               cartoons:Harmonica ,
+                               cartoons:Tambour ;
+                cartoons:hasYearOfBirth 1934 ;
+                cartoons:name "Donald Duck"@en ,
+                              "Pato Donald"@es .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Female
+cartoons:Female rdf:type owl:NamedIndividual ,
+                         cartoons:Gender .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Flute
+cartoons:Flute rdf:type owl:NamedIndividual ,
+                        cartoons:Aerophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Guitar
+cartoons:Guitar rdf:type owl:NamedIndividual ,
+                         cartoons:Cordophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Harmonica
+cartoons:Harmonica rdf:type owl:NamedIndividual ,
+                            cartoons:Aerophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#LuckyLuke
+cartoons:LuckyLuke rdf:type owl:NamedIndividual ,
+                            cartoons:CartoonCharacter ;
+                   cartoons:hasGender cartoons:Male ;
+                   cartoons:plays cartoons:Harmonica ;
+                   cartoons:hasYearOfBirth 1946 ;
+                   cartoons:name "Lucky Luke"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Lyre
+cartoons:Lyre rdf:type owl:NamedIndividual ,
+                       cartoons:Cordophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Mafalda
+cartoons:Mafalda rdf:type owl:NamedIndividual ,
+                          cartoons:CartoonCharacter ;
+                 cartoons:hasGender cartoons:Female ;
+                 cartoons:plays cartoons:Guitar ;
+                 cartoons:hasYearOfBirth 1964 ;
+                 cartoons:name "Mafalda"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Male
+cartoons:Male rdf:type owl:NamedIndividual ,
+                       cartoons:Gender .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Mickey
+cartoons:Mickey rdf:type owl:NamedIndividual ,
+                         cartoons:CartoonCharacter ;
+                cartoons:hasGender cartoons:Male ;
+                cartoons:plays cartoons:Banjo ,
+                               cartoons:CigarBox ,
+                               cartoons:Guitar ,
+                               cartoons:Tambour ;
+                cartoons:hasYearOfBirth 1928 ;
+                cartoons:name "Mickey Mouse"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Minnie
+cartoons:Minnie rdf:type owl:NamedIndividual ,
+                         cartoons:CartoonCharacter ;
+                cartoons:hasGender cartoons:Female ;
+                cartoons:plays cartoons:Flute ,
+                               cartoons:Violin ;
+                cartoons:hasYearOfBirth 1928 ;
+                cartoons:name "Minnie Mouse"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Peppa
+cartoons:Peppa rdf:type owl:NamedIndividual ,
+                        cartoons:CartoonCharacter ;
+               cartoons:hasGender cartoons:Female ;
+               cartoons:plays cartoons:Guitar ,
+                              cartoons:Tambour ;
+               cartoons:hasYearOfBirth 2004 ;
+               cartoons:name "Peppa pig"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Tambour
+cartoons:Tambour rdf:type owl:NamedIndividual ,
+                          cartoons:Membranophone .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Tintin
+cartoons:Tintin rdf:type owl:NamedIndividual ,
+                         cartoons:CartoonCharacter ;
+                cartoons:hasGender cartoons:Male ;
+                cartoons:hasYearOfBirth 1929 ;
+                cartoons:name "Tintin"@en .
+
+
+###  http://www.sorbonne-universite.fr/cartoons/ontology#Violin
+cartoons:Violin rdf:type owl:NamedIndividual ,
+                         cartoons:Cordophone .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
